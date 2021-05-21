@@ -34,29 +34,29 @@ export default function Portfolio() {
 
     ];
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        switch (selected) {
-            case "featured":
-                setData(featuredPortfolio);
-                break;
-            case "web":
-                setData(featuredPortfolio);
-                break;
-            case "mobile":
-                setData(featuredPortfolio);
-                break;
-            case "design":
-                setData(featuredPortfolio);
-                break;
-            case "content":
-                setData(featuredPortfolio);
-                break;
-                default:
-                    setData(featuredPortfolio);
-        }
+    //     switch (selected) {
+    //         case "featured":
+    //             setData(featuredPortfolio);
+    //             break;
+    //         case "web":
+    //             setData(featuredPortfolio);
+    //             break;
+    //         case "mobile":
+    //             setData(featuredPortfolio);
+    //             break;
+    //         case "design":
+    //             setData(featuredPortfolio);
+    //             break;
+    //         case "content":
+    //             setData(featuredPortfolio);
+    //             break;
+    //             default:
+    //                 setData(featuredPortfolio);
+    //     }
 
-    },[selected])
+    // },[selected])
 
 
     return (
