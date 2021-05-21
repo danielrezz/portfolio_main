@@ -1,6 +1,13 @@
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 import { useEffect, useState } from 'react';
+import { 
+    featuredPortfolio, 
+    webPortfolio,
+    mobilePortfolio,
+    designPortfolio,
+    contentPortfolio
+} from '../../data.js';
 
 
 export default function Portfolio() {
@@ -34,29 +41,29 @@ export default function Portfolio() {
 
     ];
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     switch (selected) {
-    //         case "featured":
-    //             setData(featuredPortfolio);
-    //             break;
-    //         case "web":
-    //             setData(featuredPortfolio);
-    //             break;
-    //         case "mobile":
-    //             setData(featuredPortfolio);
-    //             break;
-    //         case "design":
-    //             setData(featuredPortfolio);
-    //             break;
-    //         case "content":
-    //             setData(featuredPortfolio);
-    //             break;
-    //             default:
-    //                 setData(featuredPortfolio);
-    //     }
+        switch (selected) {
+            case "featured":
+                setData(featuredPortfolio);
+                break;
+            case "web":
+                setData(webPortfolio);
+                break;
+            case "mobile":
+                setData(mobilePortfolio);
+                break;
+            case "design":
+                setData(designPortfolio);
+                break;
+            case "content":
+                setData(contentPortfolio);
+                break;
+                default:
+                    setData(featuredPortfolio);
+        }
 
-    // },[selected])
+    },[selected])
 
 
     return (
@@ -74,30 +81,13 @@ export default function Portfolio() {
                 ))}
             </ul>
             <div className="container">
-                <div className="item">
-                    <img src="assets/pokemon.png" alt="" />
-                    <h3>Banking App</h3>
+                {data.map((d) => (
+                    <div className="item">
+                    <img src={d.img} alt="" />
+                    <h3>{d.title}</h3>
                 </div>
-                <div className="item">
-                    <img src="assets/pokemon.png" alt="" />
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img src="assets/pokemon.png" alt="" />
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img src="assets/pokemon.png" alt="" />
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img src="assets/pokemon.png" alt="" />
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img src="assets/pokemon.png" alt="" />
-                    <h3>Banking App</h3>
-                </div>
+                ))}
+                
             </div>
             
         </div>
