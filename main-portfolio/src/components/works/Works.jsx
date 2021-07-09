@@ -113,7 +113,14 @@ export default function Works() {
                                 }
                             }
                         }} />
-                        <p>Originally from South Texas, I relocated to Austin in 2012 to pursue audio engineering. Music and tech have always been strong interests of mine.</p>
+                        <p>Originally from South Texas, I relocated to Austin in 2012 to pursue audio engineering. Music and tech have always been strong interests of mine so this industry made sense. Throughout this time of teaching music and freelancing audio projects, I dabbled in web development in order to create my portfolio and a simple website for a friend's band. A few years after the seed was planted, I decided to make the leap and enroll into UT's coding bootcamp and have been pursuing software engineering ever since.
+                        <br />
+                        <br />
+                        What I love about programming is the challenge of battling the machine and the feeling of accomplishment once you have won. It's incredible to see the growth and drive gained through my experiences exhibit positive changes in the world around me.
+                        <br />
+                        <br />
+                        My goal is to be the best version of myself I can be as a software engineer, musician, and overall human. There is still much to learn.
+                        </p>
             {/* <div className="slider" style={{transform:`translateX(-${currentSlide *100}vw)`}}>
                 {data.map(d => (
                     <div className="container">
