@@ -3,8 +3,8 @@
 .topbar {
     width: 100%;
     height: 70px;
-    background-color: $maincolor;
-    color: black;
+    background-color: white;
+    color: #031424;
     position: fixed;
     top: 0;
     z-index: 3;
@@ -32,15 +32,23 @@
                 display: flex;
                 align-items: center;
                 margin-left: 30px;
+                text-decoration: none;
+                color: #8eaebd;
 
-                .icon {
-                    font-size: 20px;
-                    margin-right: 5px;
-                }
+                a {
+                    text-decoration: none;
 
-                span {
-                    font-size: 15px;
-                    font-weight: 400;
+                    .icon {
+                        font-size: 32px;
+                        margin-top: 12px;
+                        margin-right: 5px;
+                        text-decoration: none;
+                        color: #0314246b;
+                    }
+
+                    .icon:hover {
+                        color: #031424;
+                    }
                 }
             }
         }
@@ -58,9 +66,9 @@
                 span {
                     width: 100%;
                     height: 3px;
-                    background-color: #000;
+                    background-color: #031424;
                     transform-origin: left;
-                    transition: all 2s ease;
+                    transition: all 1s ease;
                 }
             }
 
@@ -70,19 +78,19 @@
 
     &.active {
         background-color: white;
-        color: #000;
+        color: #031424;
 
         .hamburger {
             span {
                 &:first-child {
-                    background-color: yellowgreen;
+                    background-color: #031424;
                     transform: rotate(45deg);
                 }
                 &:nth-child(2) {
                     opacity: 0;
                 }
                 &:last-child {
-                    background-color: yellowgreen;
+                    background-color: #031424;
                     transform: rotate(-45deg);
                 }
             }

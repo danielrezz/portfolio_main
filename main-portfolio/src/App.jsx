@@ -1,5 +1,5 @@
 import Intro from "./components/intro/Intro";
-import Testimonials from "./components/testimonials/Testimonials";
+// import Testimonials from "./components/testimonials/Testimonials";
 import Topbar from "./components/topbar/Topbar";
 import Portfolio from "./components/portfolio/Portfolio";
 import Works from "./components/works/Works";
@@ -21,7 +21,7 @@ function App() {
         <Intro />
         <Portfolio />
         <Works />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
       </div>
     </div>

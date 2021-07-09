@@ -12,10 +12,10 @@ export default function Contact() {
     return (
         <div className="contact" id="contact">
             <div className="left">
-                <img src="assets/shake.svg" alt="" />
+                <img src="assets/paperPlane.png" alt="" />
             </div>
             <div className="right">
-                <h2>Contact</h2>
+                <h2>Send me a message</h2>
                 <form onSubmit={handleSubmit}>
                     <input type="text" placeholder="Email" />
                     <textarea placeholder="Message"></textarea>

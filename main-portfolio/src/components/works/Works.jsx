@@ -1,5 +1,6 @@
 import "./works.scss";
 import { useState } from 'react';
+import Particles from 'react-particles-js';
 // import DonutSmallIcon from '@material-ui/icons/DonutSmall';
 
 export default function Works() {
@@ -47,7 +48,73 @@ export default function Works() {
 
     return (
         <div className="works" id="works">
-            <div className="slider" style={{transform:`translateX(-${currentSlide *100}vw)`}}>
+            <h2 className="title">My Story</h2>
+            <Particles 
+                        className="particles"
+                        bg={true}
+                        params={{
+                            "particles": {
+                                "number": {
+                                    "value": 60,
+                                    "density": {
+                                        "enable": false
+                                    }
+                                },
+                                "size": {
+                                    "value": 8,
+                                    "random": true,
+                                    "anim": {
+                                        "speed": 1,
+                                        "size_min": 0.3
+                                    }
+                                },
+                                "opacity": {
+                                    "value": 0.1,
+                                    "random": false,
+                                    "anim": {
+                                      "enable": false,
+                                      "speed": 1,
+                                      "opacity_min": 0,
+                                      "sync": false
+                                    }
+                                  },
+                                "line_linked": {
+                                    "enable": false
+                                },
+                                "move": {
+                                    "random": true,
+                                    "speed": 0.5,
+                                    "direction": "top",
+                                    "out_mode": "out"
+                                }
+                            },
+                            "interactivity": {
+                                "events": {
+                                    "onhover": {
+                                        "enable": false,
+                                        "mode": "bubble"
+                                    },
+                                    "onclick": {
+                                        "enable": false,
+                                        "mode": "repulse"
+                                    }
+                                },
+                                "modes": {
+                                    "bubble": {
+                                        "distance": 250,
+                                        "duration": 2,
+                                        "size": 0,
+                                        "opacity": 0
+                                    },
+                                    "repulse": {
+                                        "distance": 400,
+                                        "duration": 4
+                                    }
+                                }
+                            }
+                        }} />
+                        <p>Originally from South Texas, I relocated to Austin in 2012 to pursue audio engineering. Music and tech have always been strong interests of mine.</p>
+            {/* <div className="slider" style={{transform:`translateX(-${currentSlide *100}vw)`}}>
                 {data.map(d => (
                     <div className="container">
                     <div className="item">
@@ -68,9 +135,7 @@ export default function Works() {
                 </div>
                 ))}
                 
-            </div>
-            <img src="assets/arrow.png" className="arrow left" alt="" onClick={() => handleClick("left")}/ >
-            <img src="assets/arrow.png" className="arrow right" alt="" onClick={() => handleClick("right")} />
+            </div> */}
         </div>
     )
 }
