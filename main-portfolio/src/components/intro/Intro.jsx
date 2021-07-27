@@ -10,7 +10,7 @@ export default function Intro() {
     useEffect(() => {
         init(textRef.current, { 
             showCursor: true, 
-            strings: ['building websites', 'making music', 'helping others', 'a good challenge' ],
+            strings: ['building websites', 'solving problems', 'making music', 'helping others', 'a good challenge' ],
             backDelay: 1500,
             backSpeed: 60
         });
@@ -89,7 +89,7 @@ export default function Intro() {
             </div>
             <div className="right">
                 <div className="wrapper">
-                    <h2>Hi There, I'm</h2>
+                    <h2>Hi there, I'm</h2>
                     <h1>Daniel Reza</h1>
                     <h3>I enjoy <span ref={ textRef }></span></h3>
                     <h4>( and I'm looking for a fun place to work! )</h4>
