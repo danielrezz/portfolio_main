@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .works {
   background-color: #cf6766;
   display: flex;
@@ -11,6 +13,11 @@
     text-align: center;
     z-index: 1;
     top: 12px;
+
+    @include mobile {
+      font-size: 36px;
+      top: 22px;
+    }
   }
 
   p {
@@ -20,6 +27,11 @@
     width: 60%;
     font-size: 24px;
     margin-top: 50px;
+
+    @include mobile {
+      font-size: 14px;
+      width: 90%;
+    }
   }
 
   .particles {

@@ -26,6 +26,10 @@
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
+
+        @include mobile {
+          margin-right: 0;
+        }
       }
 
       .itemContainer {
@@ -44,6 +48,10 @@
             margin-right: 5px;
             text-decoration: none;
             color: #0314246b;
+
+            @include mobile {
+              display: none;
+            }
           }
 
           .icon:hover {

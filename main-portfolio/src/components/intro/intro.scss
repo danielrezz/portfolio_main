@@ -1,10 +1,21 @@
+@import "../../global.scss";
+
 .intro {
   background-color: #30415d;
   display: flex;
 
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .left {
     flex: 0.5;
     overflow: hidden;
+
+    @include mobile {
+      flex: 0.8;
+    }
 
     .imgContainer {
       width: 600px;
@@ -19,12 +30,21 @@
       margin-right: 10px;
       position: relative;
 
+      @include mobile {
+        align-items: flex-start;
+      }
+
       img {
         height: 95%;
         width: auto;
         border-radius: 20%;
         position: absolute;
         z-index: 1;
+
+        @include mobile {
+          height: 72%;
+          border-radius: 0%;
+        }
       }
     }
   }
@@ -41,9 +61,18 @@
       justify-content: center;
       color: white;
 
+      @include mobile {
+        padding-left: 0;
+        align-items: center;
+      }
+
       h1 {
         font-size: 60px;
         margin: 0px 0;
+
+        @include mobile {
+          font-size: 40px;
+        }
       }
 
       h2 {
@@ -52,6 +81,10 @@
 
       h3 {
         font-size: 30px;
+
+        @include mobile {
+          font-size: 20px;
+        }
 
         span {
           font-size: inherit;
@@ -86,6 +119,10 @@
         font-size: 60px;
         color: #8eaebd;
         animation: arrowBlink 2s infinite;
+
+        @include mobile {
+          display: none;
+        }
       }
 
       @keyframes arrowBlink {
