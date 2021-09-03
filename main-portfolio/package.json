@@ -1,5 +1,6 @@
 {
   "name": "main-portfolio",
+  "homepage": "https://danielreza.me",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

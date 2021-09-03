@@ -21,7 +21,7 @@ export const webDevPortfolio = [
     id: 4,
     title: "Zen Gong",
     img: "portfolioImages/zengong.jpg",
-    link: "https://zen-gong.herokuapp.com/"
+    link: "https://danielrezz.github.io/zen-gong/"
   },
   {
     id: 5,
